@@ -1,0 +1,72 @@
+:root{
+    --Dark-Gray: hsl(0, 0%, 63%);
+    --Black: hsl(0, 0%, 0%);
+    --White: hsl(0, 0%, 100%);
+    --Very-Dark-Gray: hsl(0, 0%, 27%);
+}
+
+html{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 67.5%;
+}
+
+body{
+    height: 100vh;
+    background-color: #cccc;
+    overflow: hidden;
+}
+
+.hearder-top{
+    position: absolute;
+    width: 100%;
+}
+
+.container-hearder{
+    padding: 4em 2em;
+    display: flex;
+    align-items: center;
+}
+
+.box-logo-icon{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav{
+    background-color: var(--White);
+    display: flex;
+    padding: 3em 1em 3em 2em;
+    gap: 4em;
+    align-items: center;
+    /* transform: translateY(-9.6em); */
+    transition: all .3s ease-in-out;
+}
+
+.close-icon, .hamburguer-icon{
+    cursor: pointer;
+}
+
+.ul-container{
+    display: flex;
+    padding: 0;
+    list-style: none;
+    gap: 1.6em;
+    font-size: 1.6rem;
+}
+
+.li-nav a{
+    text-decoration: none;
+    color: var(--Black);
+    font-weight: 700;
+}
+
+.li-nav a:hover{
+    color: var(--Dark-Gray);
+}
+
+.slyde-container{
+    height: 33em;
+    background-image: url(../room-homepage-master/images/mobile-image-hero-1.jpg);
+    background-repeat: no-repeat;
+}

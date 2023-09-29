@@ -15,10 +15,3 @@
 .DS_Store
 
 .prettierignore
-
-/images/index.html
-/images/README-template.md
-/images/README-template.md
-/images/README.md
-
-*/design
