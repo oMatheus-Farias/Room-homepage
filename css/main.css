@@ -137,7 +137,7 @@ body{
     display: flex;
     position: absolute;
     right: 0;
-    bottom: 37.2em;
+    bottom: 39.3em;
     cursor: pointer;
 }
 
@@ -148,4 +148,36 @@ body{
 
 .previous-btn:hover, .next-btn:hover{
     background-color: var(--Very-Dark-Gray);
+}
+
+.footer{
+    margin-top: 8em;
+}
+
+.footer-boxText{
+    padding: 4em 2em;
+}
+
+.footer_title{
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+}
+
+.footer_text{
+    font-size: 1.6rem;
+    color: var(--Dark-Gray);
+    line-height: 1.4em;
+}
+
+.img-darkFurniture{
+    height: 24em;
+    background-image: url(../room-homepage-master/images/image-about-dark.jpg);
+    background-repeat: no-repeat;
+}
+
+.img-lightFurniture{
+    height: 24em;
+    background-image: url(../room-homepage-master/images/image-about-light.jpg);
+    background-repeat: no-repeat;
 }
