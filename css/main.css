@@ -12,13 +12,13 @@ html{
 
 body{
     height: 100vh;
-    background-color: #cccc;
-    overflow: hidden;
 }
 
 .hearder-top{
     position: absolute;
     width: 100%;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .container-hearder{
@@ -39,7 +39,6 @@ body{
     padding: 3em 1em 3em 2em;
     gap: 4em;
     align-items: center;
-    /* transform: translateY(-9.6em); */
     transition: all .3s ease-in-out;
 }
 
@@ -62,11 +61,91 @@ body{
 }
 
 .li-nav a:hover{
-    color: var(--Dark-Gray);
+    color: var(--Very-Dark-Gray);
+}
+
+.main{
+    position: relative;
 }
 
 .slyde-container{
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+}
+
+.slyde-container.off-js{
+    overflow: auto;
+}
+
+.slyde-container_img{
     height: 33em;
-    background-image: url(../room-homepage-master/images/mobile-image-hero-1.jpg);
     background-repeat: no-repeat;
+}
+
+.img1{
+    background-image: url(../room-homepage-master/images/mobile-image-hero-1.jpg);
+}
+
+.img2{
+    background-image: url(../room-homepage-master/images/mobile-image-hero-2.jpg);
+}
+
+.img3{
+    background-image: url(../room-homepage-master/images/mobile-image-hero-3.jpg);
+}
+
+.slyde-container_text{
+    padding: 2.2em 2em;
+    width: 30em;
+    max-width: 30em;
+    white-space: initial;
+}
+
+.slyde_title{
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: initial;
+    margin-bottom: 0;
+}
+
+.slyde_text{
+    font-size: 1.6rem;
+    color: var(--Dark-Gray);
+    line-height: 1.4em;
+}
+
+.slyde_shop-link{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--Black);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: .8em;
+    margin-top: 1.8em;
+}
+
+.slyde_shop-arrow{
+    margin-left: 2em
+}
+
+.slyde_shop-link:hover{
+    color: var(--Dark-Gray);
+}
+
+.btns-actionSlyde-container{
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 37.2em;
+    cursor: pointer;
+}
+
+.previous-btn, .next-btn{
+    background-color: var(--Black);
+    padding: 1.4em 1.8em;
+}
+
+.previous-btn:hover, .next-btn:hover{
+    background-color: var(--Very-Dark-Gray);
 }
