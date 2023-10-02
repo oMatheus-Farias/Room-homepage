@@ -23,8 +23,9 @@ body{
 
 .container-hearder{
     padding: 4em 2em;
-    display: flex;
+    /* display: flex; */
     align-items: center;
+    display: none;
 }
 
 .box-logo-icon{
@@ -180,4 +181,88 @@ body{
     height: 24em;
     background-image: url(../room-homepage-master/images/image-about-light.jpg);
     background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 81.25em){
+    .hearder-top{
+        display: flex;
+        padding: 1em 6em;
+        width: initial;
+    }
+
+    .container-hearder{
+        display: flex;
+    }
+    
+    .nav{
+        background-color: transparent;
+    }
+
+    .box-hamburguer-icon, .close-icon{
+        display: none;
+    }
+
+    .box-logo-icon{
+        display: block;
+    }
+
+    .li-nav a{
+        color: var(--White);
+        padding: .6em 0em;
+    }
+
+    .li-nav a:hover{
+        color: var(--White);
+        border-bottom: 2px solid var(--White);
+    }
+
+    .img1{
+        background-image: url(../room-homepage-master/images/desktop-image-hero-1.jpg);
+    }
+    
+    .img2{
+        background-image: url(../room-homepage-master/images/desktop-image-hero-2.jpg);
+    }
+    
+    .img3{
+        background-image: url(../room-homepage-master/images/desktop-image-hero-3.jpg);
+    }
+
+    .slyde-show{
+        display: flex;
+    }
+
+    .slyde-container_img{
+        width: 77.8em;
+        height: 49.5em;
+    }
+
+    .slyde-container_text{
+        padding: 6em 8.6em;
+        position: relative;
+    }
+
+    .footer{
+        display: flex;
+        margin-top: 0;
+        flex: 1;
+    }
+
+    .footer-boxText{
+        width: 51.5em;
+        height: 16em;
+    }
+
+    .img-darkFurniture{
+        width: 38.9em;
+    }
+
+    .img-lightFurniture{
+        width: 46em;
+    }
+
+    .btns-actionSlyde-container{
+        bottom: 0;
+        left: 77.8em;
+    }
 }
