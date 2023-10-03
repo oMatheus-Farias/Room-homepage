@@ -75,6 +75,11 @@ body{
     white-space: nowrap;
 }
 
+.slyde-action{
+    display: flex;
+    transition: all 1s;
+}
+
 .slyde-container.off-js{
     overflow: auto;
 }
@@ -138,7 +143,7 @@ body{
     display: flex;
     position: absolute;
     right: 0;
-    bottom: 39.3em;
+    bottom: 37.71em;
     cursor: pointer;
 }
 
